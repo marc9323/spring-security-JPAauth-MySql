@@ -23,6 +23,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // even regurgitate hard coded values!
 
         // calls a UserDetailsService in order to look up a user
+
+        // NOTE THAT FOR DUMMY USERDETAILS IT IS NECESSSARY TO COMMENT OUT
+        // JPA AND SQL CONNECTOR IN POM.XML
         auth.userDetailsService(userDetailsService);
     }
 
